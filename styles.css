@@ -1,0 +1,66 @@
+:root {
+    --purple: #794ae4;
+    --gray: #969696;
+    background-color: lightgray
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-container {
+    /* 842*650 */
+    background-color: white;
+    max-width: 842px;
+    max-height: 650px;
+    display: flex;
+    padding: 3.2rem 3rem;
+
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    max-width: 10rem;
+    max-height: 4.5rem;
+    margin-inline: 1.5rem;
+    color: gray;
+    font-weight: 500;
+}
+
+.form-field > input {
+    font-size: 2rem;
+    border: solid thin gray 4px;
+    padding-inline: 1rem;
+    margin: 0.5rem 0.1rem;
+
+}
+
+
+
+/* input 160*72 */
+/* button 88*96 */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
