@@ -12,20 +12,26 @@
 
   <main id="main-container">
     <form action="">
-      <label for="day" class="form-field">
+      <label for="day-input" class="form-field">
         DAY
-        <input type="text" name="day" >
+        <input type="number" name="day" id="day-input">
       </label>
-      <label for="month" class="form-field">
-        YEAR
-        <input type="text" name="monthyear" >
-      </label>
-      <label for="year" class="form-field">
+      <label for="month-input" class="form-field">
         MONTH
-        <input type="text" name="year" >
+        <input type="number" name="month" id="month-input">
       </label>
+      <label for="year-input" class="form-field">
+        YEAR
+        <input type="number" name="year" id="year-input">
+      </label>
+      <button id="submit"><img src="assets/images/icon-arrow.svg" alt=""></button>
     </form>
-    <div></div>
+    <div id="age-container">
+      <h1 class="age-info"><span id="years-placeholder">--</span> Years</h1>
+      <h1 class="age-info"><span id="months-placeholder">--</span> Months</h1>
+      <h1 class="age-info"><span id="days-placeholder">--</span> Days</h1>
+    </div>
+
   </main>
   
   
@@ -33,5 +39,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/yaadevmohit" target="_blank">Mohit Yadav</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

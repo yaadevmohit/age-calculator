@@ -6,52 +6,116 @@
 
 body {
     display: flex;
-    align-content: center;
-    justify-content: center;
     flex-direction: column;
-}
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+  }
 
 #main-container {
     /* 842*650 */
     background-color: white;
     max-width: 842px;
     max-height: 650px;
+    width: fit-content;
     display: flex;
     padding: 3.2rem 3rem;
-
+    align-self: center;
+    flex-direction: column; 
+    border-radius: 1rem;
+    border-bottom-right-radius: 5rem;
+    margin-bottom: 2rem;
 }
 
 form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    border-bottom: solid thin lightgray;
+    padding-right: 2rem;
+    padding-block: 1rem;
+    position: relative;
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
-    max-width: 10rem;
+    max-width: 7rem;
     max-height: 4.5rem;
-    margin-inline: 1.5rem;
-    color: gray;
-    font-weight: 500;
+    margin-right: 2rem;
+    color: var(--gray);
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
 }
 
 .form-field > input {
-    font-size: 2rem;
-    border: solid thin gray 4px;
-    padding-inline: 1rem;
+    font-size: 1.5rem;
+    border: solid thin lightgray;
+    padding: 0.5rem 1rem;
     margin: 0.5rem 0.1rem;
-
+    border-radius: 8px;
 }
 
-
+#submit {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--purple);
+    /* margin-top: 1rem; */
+    cursor: pointer;
+    position: absolute;
+    right: -1rem;
+    bottom: -2rem;
+    transition: all ease-in;
+}
 
 /* input 160*72 */
 /* button 88*96 */
+#age-container {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2rem
+}
+
+.age-info {
+    margin: 0.5rem;
+}
+
+.age-info > span {
+    color: var(--purple);
+}
+
 
 @media only screen and (max-width: 600px) {
+    
+    form {
+        padding-inline: 1rem;
+        padding-bottom: 3rem;
+        width: var(--form-width);
+    }
+    .form-field {
+        margin-right: 1rem;
+        max-width: 5.25rem;
+    }
 
+    .form-field > input {
+        font-size: 1.2rem;
+    }
+
+    #submit {
+        right: calc(var(--form-width) / 2);
+    }
+
+    html {
+        font-size: 14px;
+    }
 }
 
 
