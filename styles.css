@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0; 
+    font-family:'Poppins', sans-serif;;
   }
 
 #main-container {
@@ -56,6 +57,7 @@ form {
     padding: 0.5rem 1rem;
     margin: 0.5rem 0.1rem;
     border-radius: 8px;
+    font-weight: 700;
 }
 
 #submit {
@@ -86,6 +88,8 @@ form {
 
 .age-info {
     margin: 0.5rem;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .age-info > span {
@@ -106,15 +110,11 @@ form {
     }
 
     .form-field > input {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     #submit {
         right: calc(var(--form-width) / 2);
-    }
-
-    html {
-        font-size: 14px;
     }
 }
 

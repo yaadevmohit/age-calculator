@@ -9,6 +9,11 @@ const submitButton = document.getElementById("submit")
 
 const currentDate = new Date()
 
+const inputValidation = () => {
+    
+}
+
+
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()
