@@ -54,7 +54,7 @@ form {
 .form-field > input {
     font-size: 1.5rem;
     border: solid thin lightgray;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
     margin: 0.5rem 0.1rem;
     border-radius: 8px;
     font-weight: 700;
